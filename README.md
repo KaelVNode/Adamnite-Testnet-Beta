@@ -10,9 +10,9 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install make clang pkg-config libssl-dev libclang-dev build-essential git curl ntp jq llvm tmux htop screen unzip cmake -y
 ```
 
-Since the repo is private, we need access tokens, for this;
+Karena repo bersifat pribadi, kami memerlukan token akses, untuk ini;
 
-settings -> developer settings -> personal access tokens -> tokens classic -> generate new token
+pengaturan -> pengaturan pengembang -> token akses pribadi -> token klasik -> buat token baru
 
 ```
 git clone https://"access-token"@github.com/Adamnite/goAdamnite.git
@@ -40,9 +40,13 @@ screen -S adamnite
 
 ### Sending Transactions
 
-Make sure your are in goAdamnite/Ubuntu directory and have test NITE.
+Pastikan Anda berada di direktori goAdamnite/Ubuntu dan telah mendapatkan test token $NITE.
 
-Check your balance by running ``./gnite-test --balance "your public address"``
+Periksa saldo Anda dengan
+
+```
+./gnite-test --balance "your public address"
+```
 
 ```
 ./gnite-test --sendaddr "your address" --recaddr "the address you want to send coins to" --amount "the amount you want to send --password "your password"
