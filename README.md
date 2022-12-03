@@ -48,6 +48,8 @@ Periksa saldo Anda dengan
 ./gnite-test --balance "your public address"
 ```
 
+Mengirim token
+
 ```
 ./gnite-test --sendaddr "your address" --recaddr "the address you want to send coins to" --amount "the amount you want to send --password "your password"
 ```
